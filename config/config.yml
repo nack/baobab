@@ -1,0 +1,7 @@
+development: &local
+  google_api_key: 'hogehogehogehogehogehogehogehogehoge'
+  google_api_url: 'http://ajax.googleapis.com/ajax/services/search/images'
+production:
+ <<: *local
+staging:
+ <<: *local
