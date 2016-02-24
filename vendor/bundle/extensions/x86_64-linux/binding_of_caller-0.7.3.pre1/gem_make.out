@@ -1,0 +1,16 @@
+current directory: /home/nack/workspace/baobab/vendor/bundle/gems/binding_of_caller-0.7.3.pre1/ext/binding_of_caller
+/usr/bin/ruby -r ./siteconf20160224-3078-130excg.rb extconf.rb
+
+current directory: /home/nack/workspace/baobab/vendor/bundle/gems/binding_of_caller-0.7.3.pre1/ext/binding_of_caller
+make "DESTDIR=" clean
+make: *** No rule to make target 'clean'.  中止.
+
+current directory: /home/nack/workspace/baobab/vendor/bundle/gems/binding_of_caller-0.7.3.pre1/ext/binding_of_caller
+make "DESTDIR="
+echo "Nada."
+Nada.
+
+current directory: /home/nack/workspace/baobab/vendor/bundle/gems/binding_of_caller-0.7.3.pre1/ext/binding_of_caller
+make "DESTDIR=" install
+echo "Nada."
+Nada.

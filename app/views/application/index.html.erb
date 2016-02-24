@@ -1,2 +1,9 @@
-<h1>バオバブの木</h1>
+クローリング画像取得
 <hr>
+
+<% @imgsrcs.each do |src| %>
+  <%= src %><br>
+<% end %>
+<% @imgsrcs.each do |src| %>
+  <%= image_tag src %>
+<% end %>

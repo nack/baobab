@@ -1,0 +1,20 @@
+current directory: /home/nack/workspace/baobab/vendor/bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
+/usr/bin/ruby -r ./siteconf20160224-3078-blhsd7.rb extconf.rb
+creating Makefile
+
+current directory: /home/nack/workspace/baobab/vendor/bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
+make "DESTDIR=" clean
+rm -f 
+rm -f debug_inspector.so  *.o  *.bak mkmf.log .*.time
+
+current directory: /home/nack/workspace/baobab/vendor/bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
+make "DESTDIR="
+gcc -I. -I/usr/include -I/usr/include/ruby/backward -I/usr/include -I.   -fPIC -O2 -g -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -specs=/usr/lib/rpm/redhat/redhat-hardened-cc1 -mtune=generic -fPIC -m64 -o debug_inspector.o -c debug_inspector.c
+rm -f debug_inspector.so
+gcc -shared -o debug_inspector.so debug_inspector.o -L. -L/usr/lib64 -L. -Wl,-z,relro -specs=/usr/lib/rpm/redhat/redhat-hardened-ld -fstack-protector -rdynamic -Wl,-export-dynamic  -m64  -lruby  -lpthread -ldl -lcrypt -lm   -lc
+
+current directory: /home/nack/workspace/baobab/vendor/bundle/gems/debug_inspector-0.0.2/ext/debug_inspector
+make "DESTDIR=" install
+/usr/bin/mkdir -p . ./.gem.20160224-3078-1y3pi3g
+exit > .RUBYARCHDIR.time
+/usr/bin/install -c -m 0755 debug_inspector.so ./.gem.20160224-3078-1y3pi3g
